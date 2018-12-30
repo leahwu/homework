@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Run BC for all tasks
+mkdir -p results/BC
+for e in Ant-v2 HalfCheetah-v2 Hopper-v2 Humanoid-v2 Reacher-v2 Walker2d-v2; do
+	python run_BC.py $e
+done
